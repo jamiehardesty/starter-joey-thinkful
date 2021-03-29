@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* h1 {
+    margin: 0; 
+    padding: 0;
+} */
+
+header {
+    background-color: #0B1C51;
+    color: white;
+}
+header h1 {
+    margin: 0;
+    font-size: 52px;
+    line-height: 52px;
+}
+header nav {
+    font-family: 'Montserrat', sans-serif;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media all and (min-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+}
