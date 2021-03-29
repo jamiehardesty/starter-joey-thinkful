@@ -1,32 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* h1 {
-    margin: 0; 
-    padding: 0;
-} */
-
-header {
-    background-color: #0B1C51;
-    color: white;
-}
-header h1 {
-    margin: 0;
-    font-size: 52px;
-    line-height: 52px;
-}
-header nav {
-    font-family: 'Montserrat', sans-serif;
-}
-header nav ul {
-    list-style: none;
-}
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-@media all and (min-width: 600px) {
-    h1 {
-        font-size: 48px;
+/* tasks */
+    
+    /* mobile-specified font-size */
+        header h1 {
+            font-size: 52px;
+        }
+    /* desktop-specified font-size */
+        @media all and (min-width: 600px) {
+            header h1 { 
+                font-size: 48px;
+            }
+        }
+    /* designated font family for navigation */ 
+        header nav { 
+            font-family: 'Montserrat', sans-serif;
+        }
+    /* designated background color */ 
+    header {
+        background-color: #0B1C51;
     }
-}
+
+/* further stylization to match the images in views */
+    header {
+        color: white;
+        
+    }
+    header h1 {
+        border: 1px solid red;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    header nav {
+        border: 1px solid red;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 15%;
+        list-style: none;
+    }
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
